@@ -1,5 +1,8 @@
 package array.sample;
 
+import java.lang.reflect.Array;
+import java.util.Scanner;
+
 /**
  * 기본 자료형(Primitive Type) 1차원 배열 테스트용 클래스
  * 2023.01.02(월) 작성
@@ -37,7 +40,7 @@ public class ArraySample {
         //boolean : false, char : '\u0000', 정수 : 0, 실수 : 0
         //클래스형 : null
         //배열을 연속으로 다룰 때 주로 for 문을 사용함
-        for(int i = 0; i < ar.length;i++){
+        for (int i = 0; i < ar.length; i++) {
             System.out.println(i + "번째 방의 값 : " + ar[i]);
         }
     }
@@ -49,10 +52,107 @@ public class ArraySample {
         boolean[] bar = new boolean[10];
 
         //배열 생성시 초기값 없으면, jvm에 의해 준비된 기본값(default) 기록됨
-        for(int i = 0; i < bar.length; i++){
-            System.out.println(bar + "["+i+"]" + bar[i]);
+        for (int i = 0; i < bar.length; i++) {
+            System.out.println(bar + "[" + i + "]" + bar[i]);
         }
 
+    }
+
+    //할당된 배열 각 방에 값 기록/사용
+    //배열명[순번] 값;
+    //순번 == 인덱스(index)
+    public void testArray3() {
+        int[] ar = new int[5];
+
+        //각 방(변수방과 같음)에 값 기록
+        ar[0] = 12; //ar이 가진 시작주소 = 값;
+        ar[1] = 23;
+        ar[2] = 5;
+        ar[3] = 45;
+        ar[4] = 99;
+
+        //배열 각 방의 값 사용 : 배열명[순번]
+        for (int i = 0; i < ar.length; i++) {
+            System.out.println(i + " + " + ar[i]);
+        }
+    }
+
+    //배열공간의 초기화 테스트
+    public void testArrayInit() {
+        //배열 초기화
+        //배열공간 생성(할당)과 동시에 초기값 기록 처리
+        //구문 표현방식 1
+        //자료형[] 배열레퍼런스 = {초기값, 초기값, ...};
+        //초기값의 갯수만큼 자동 동적할당(힙에 생성)하고 바로 초기값을 각 방에 순서대로 기록함
+        int[] ar = {11, 22, 33, 44, 55, 66, 77, 88, 99};
+        System.out.println("할당된 방의 갯수 : " + ar.length);
+
+        for (int i = 0; i < ar.length; i++) {
+            System.out.print(ar[i] + "  ");
+        }
+        System.out.println();
+    }
+
+    public void testArrayInit2() {
+        //배열 초기화
+        //배열공간 생성(할당)과 동시에 초기값 기록 처리
+        //구문 표현방식 2
+        //자료형[] 배열레퍼런스 = {초기값, 초기값, ...};
+        //초기값의 갯수만큼 자동 동적할당(힙에 생성)하고 바로 초기값을 각 방에 순서대로 기록함
+        int[] ar1 = new int[]{11, 22, 33, 44, 55, 66, 77, 88, 99};
+        System.out.println("할당된 방의 갯수 : " + ar1.length);
+
+        for (int i = 0; i < ar1.length; i++) {
+            System.out.print(ar1[i] + "  ");
+        }
+        System.out.println();
+
+        int[] ar2 = new int[]{11, 22, 33, 44, 55, 66, 77, 88, 99, 100};
+        System.out.println("할당된 방의 갯수 : " + ar2.length);
+
+        for (int i = 0; i < ar2.length; i++) {
+            System.out.print(ar2[i] + "  ");
+        }
+        System.out.println();
+
+        //방법1과 방법2의 차이점 :
+        //방법1은 배열 선언과 초기화가 한번에 작성되어야 함
+        //int[] ar3;
+        //ar3 = {1, 2, 3, 4, 5};
+        int[] ar3 = {1, 2, 3, 4, 5};
+
+        //방법 2는 배열 선언과 초기화
+        int[] ar4;
+        ar4 = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
+
+        for (int i = 0; i < ar3.length; i++) {
+            System.out.print(ar3[i] + " ");
+        }
+
+        for (int i = 0; i < ar4.length; i++) {
+            System.out.print(ar4[i] + " ");
+        }
+    }
+
+    public void testArrayInit21() {
+        //배열공간 방갯수는 정수 리터럴(값) 또는 정수변수 사용가능
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("배열로 할당 할 방 갯수 : ");
+        int su = scanner.nextInt();
+
+        int[] nums = new int[su];
+        System.out.println("nums length : " + nums.length);
+
+        //1~100 사이의 임의의 난수가 기록되게 함
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = (int) (Math.random() * 100) + 1;
+        }
+
+        for(int i = 0; i < nums.length;i++){
+            System.out.print(nums[i] + "  ");
+        }
+        System.out.println();
     }
 
 }

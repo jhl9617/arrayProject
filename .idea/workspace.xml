@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b94fab2a-19e8-4105-a15f-5538ab091830" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrayProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/run/TestArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/sample/ArraySample.java" afterDir="false" />
+    <list default="true" id="b94fab2a-19e8-4105-a15f-5538ab091830" name="변경" comment="2023.01.02">
+      <change afterPath="$PROJECT_DIR$/src/array/sample/TwoArraySample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/args/test/TestCommandLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitive/array/PracticeArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/run/TestArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/run/TestArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/sample/ArraySample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/sample/ArraySample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +35,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="TestArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestArray" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="array.run.TestArray" />
       <module name="arrayProject" />
       <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
@@ -58,11 +56,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="애플리케이션.TestArray" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +66,29 @@
       <option name="presentableId" value="Default" />
       <updated>1672623388659</updated>
     </task>
+    <task id="LOCAL-00001" summary="2023.01.02">
+      <created>1672626421824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672626421824</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2023.01.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.01.02" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/sample/ArraySample.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
